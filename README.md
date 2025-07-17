@@ -86,13 +86,13 @@ ollama run mistral
 ---  
 ### 🔧 Backend
 
-```bash
 cd backend
 ./mvnw spring-boot:run
 
 cd frontend
 npm install
 npm start
+```
 
 ** Future Enhancements **
 	•	Recognize gateways (if/else)
