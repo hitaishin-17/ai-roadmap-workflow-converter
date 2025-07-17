@@ -121,4 +121,4 @@ Hi, I’m Hitaishi N — a Product Manager with experience in:
 - Cross-functional system design
 - Workflow thinking for dev + ops teams
 
-📩 [Let’s connect on LinkedIn (www.linkedin.com/in/hitaishi-n-grovista)]
+📩 [Let’s connect on LinkedIn](www.linkedin.com/in/hitaishi-n-grovista)
