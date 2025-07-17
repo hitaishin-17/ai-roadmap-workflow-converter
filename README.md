@@ -38,14 +38,17 @@ This project showcases how I:
 
 ## Demo
 
-> Example input:
-  1.	User Sign-up: Register with email
-	2.	Email Verification: Confirm via link
-	3.	Profile Completion: Add basic info
-	4.	Dashboard: Personalized view
+Here’s how the tool works in action:
+Upload a roadmap CSV — for example:
+1. Idea Review  
+2. Design Kickoff  
+3. Development  
+4. QA Testing  
+5. Launch  
 
-➡️ Output: A BPMN diagram  
-`Start → Task 1 → Task 2 → ... → End`
+- The AI maps each step into a structured BPMN flow
+- Output is visualized instantly as a BPMN diagram using bpmn-js
+- You can export the BPMN XML and plug it into engines like Camunda or Zeebe
 
 ![bpmn demo](./diagrams/screenshot.png)
 
