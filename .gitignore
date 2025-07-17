@@ -1,5 +1,7 @@
 # === Java / Spring Boot ===
 /target/
+# Ignore Maven or Spring Boot build output
+/backend/target/
 *.class
 *.jar
 *.war
