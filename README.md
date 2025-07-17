@@ -12,7 +12,7 @@ As a Product Manager, I often noticed this disconnect:
 - Roadmaps lived in docs, Notion, or whiteboards.
 - Engineers wanted structured flows.
 - Ops needed standardized process logic.
-- Everyone wanted *clarity* — fast.
+- Everyone wanted *clarity* fast.
 
 So I built a tool to solve that:
 
@@ -49,6 +49,7 @@ This project showcases how I:
 
 ![bpmn demo](./diagrams/screenshot.png)
 
+Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing
 ---
 
 ## 🧠 PM Skills Demonstrated
