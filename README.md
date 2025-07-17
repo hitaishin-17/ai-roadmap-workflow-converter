@@ -52,9 +52,10 @@ This project showcases how I:
 Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing
 ---
 
-## 🧠 PM Skills Demonstrated
 
-| PM Skill                        | Demonstrated Through                       |
+## Product Thinking Behind the Build
+
+| PM Skill                      | Demonstrated Through                       |
 |-------------------------------|---------------------------------------------|
 | Workflow & Process Thinking   | Structured roadmap into BPMN format         |
 | AI Product Fluency            | Used self-hosted LLM (Mistral) with prompts |
@@ -64,7 +65,7 @@ Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/vi
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Layer      | Stack                            |
 |------------|----------------------------------|
@@ -76,7 +77,7 @@ Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/vi
 
 ---
 
-## 🔧 Setup
+## Setup
 
 ### ⚙️ Ollama + Mistral (LLM)
 
