@@ -47,7 +47,7 @@ This project showcases how I:
 ➡️ Output: A BPMN diagram  
 `Start → Task 1 → Task 2 → ... → End`
 
-![bpmn demo](./assets/demo.png)
+![bpmn demo](./diagrams/screenshot.png)
 
 ---
 
