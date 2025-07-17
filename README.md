@@ -52,7 +52,7 @@ Upload a roadmap CSV — for example:
 
 ![bpmn demo](./diagrams/screenshot.png)
 
-Watch the Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing
+📽️ [Watch the Demo Video](https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing)
 ---
 
 
@@ -121,4 +121,4 @@ Hi, I’m Hitaishi N — a Product Manager with experience in:
 - Cross-functional system design
 - Workflow thinking for dev + ops teams
 
-📩 Let’s connect on www.linkedin.com/in/hitaishi-n-grovista
+📩 [Let’s connect on LinkedIn (www.linkedin.com/in/hitaishi-n-grovista)]
