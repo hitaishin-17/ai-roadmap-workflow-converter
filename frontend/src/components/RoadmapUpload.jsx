@@ -46,7 +46,7 @@ const RoadmapUpload = () => {
     <div className="upload-container">
       <h2>Upload Roadmap File</h2>
       <input type="file" accept=".csv" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Convert to BPMN</button>
+      <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded" onClick={handleUpload}>Convert to BPMN</button>
       <p>{status}</p>
     </div>
   );

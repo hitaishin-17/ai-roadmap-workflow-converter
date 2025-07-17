@@ -32,11 +32,11 @@ public class AIMapperService {
     }
 
     public String mapTextToSteps(String roadmapText) {
-        String prompt = "Convert this roadmap into a numbered list of short BPMN-ready steps in this format:\n\n"
-                + "1. Title: Short title\n"
-                + "2. Title: Next task title\n\n"
-                + "Do NOT return explanations, only the numbered list.\n\n"
-                + roadmapText;
+        String prompt = "Convert this roadmap into a numbered list of short steps in this exact format:\n\n" +
+                "1. Step Title: Short description\n" +
+                "2. Step Title: Another description\n\n" +
+                "⚠️ Do NOT return explanations or extra text — only the numbered list in this exact format.\n\n" +
+                roadmapText;
 
         Gson gson = new GsonBuilder().create();
 
@@ -69,12 +69,24 @@ public class AIMapperService {
 
             for (String line : lines) {
                 line = line.trim();
+
+                if (line.isEmpty()) continue;
+
+                // Remove "1.", "2." etc.
+                line = line.replaceAll("^\\d+\\.\\s*", "");
+
                 if (line.contains(":")) {
                     String[] parts = line.split(":", 2);
-                    String title = parts[0].replaceAll("^\\d+\\.\\s*", "").trim(); // remove "1. "
+                    String title = parts[0].trim();
                     String desc = parts[1].trim();
                     steps.add(new RoadmapItem(title, desc));
+                } else {
+                    steps.add(new RoadmapItem(line, "")); // title only
                 }
+            }
+
+            if (steps.isEmpty()) {
+                throw new IllegalStateException("❌ No steps parsed from AI response.");
             }
 
             System.out.println("✅ Parsed steps:");
