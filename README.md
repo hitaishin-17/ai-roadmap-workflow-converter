@@ -49,13 +49,13 @@ This project showcases how I:
 
 ![bpmn demo](./diagrams/screenshot.png)
 
-Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing
+Watch the Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing
 ---
 
 
 ## Product Thinking Behind the Build
 
-| PM Skill                      | Demonstrated Through                       |
+| 	 Skill                  |  Demonstrated Through                       |
 |-------------------------------|---------------------------------------------|
 | Workflow & Process Thinking   | Structured roadmap into BPMN format         |
 | AI Product Fluency            | Used self-hosted LLM (Mistral) with prompts |
