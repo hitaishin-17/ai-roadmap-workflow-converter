@@ -95,25 +95,25 @@ npm start
 ```
 
 **Future Enhancements**
-	•	Recognize gateways (if/else)
-	•	Export BPMN as SVG
-	•	Multilingual roadmap input
-	•	Slack/Notion roadmap ingestion
-	•	Use streaming LLM output for UX
+- Recognize gateways (if/else)
+- Export BPMN as SVG
+- Multilingual roadmap input
+- Slack/Notion roadmap ingestion
+- Use streaming LLM output for UX
 
 **Why This Project Matters**
 
 Whether you’re building internal tooling, AI products, or low-code workflow engines — this project shows how I:
-	•	Start from a user pain
-	•	Translate it into product requirements
-	•	Use practical AI to reduce friction
-	•	Ship quickly and cleanly
+- Start from a user pain
+- Translate it into product requirements
+- Use practical AI to reduce friction
+- Ship quickly and cleanly
 
 **About Me**
 
 Hi, I’m @hitaishin-17 — a Product Manager with experience in:
-	•	AI automation & internal platforms
-	•	Cross-functional system design
-	•	Workflow thinking for dev + ops teams
+- AI automation & internal platforms
+- Cross-functional system design
+- Workflow thinking for dev + ops teams
 
 📩 Let’s connect on www.linkedin.com/in/hitaishi-n-grovista
