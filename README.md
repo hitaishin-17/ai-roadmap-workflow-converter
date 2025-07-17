@@ -79,7 +79,7 @@ Demo Video: https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/vi
 
 ## Setup
 
-### ⚙️ Ollama + Mistral (LLM)
+### Ollama + Mistral (LLM)
 
 Install [Ollama](https://ollama.com):
 
@@ -113,7 +113,7 @@ Whether you’re building internal tooling, AI products, or low-code workflow en
 
 **About Me**
 
-Hi, I’m @hitaishin-17 — a Product Manager with experience in:
+Hi, I’m Hitaishi N — a Product Manager with experience in:
 - AI automation & internal platforms
 - Cross-functional system design
 - Workflow thinking for dev + ops teams
