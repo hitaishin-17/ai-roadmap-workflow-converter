@@ -1,0 +1,9 @@
+Title,Description,Owner,DueDate
+Gather Requirements,Collect initial business and technical requirements from stakeholders,Product Manager,2024-08-01
+Design System Architecture,Plan out the architecture components and data flow,Tech Lead,2024-08-10
+Setup Development Environment,Prepare local/dev environments with necessary tools and access,DevOps Engineer,2024-08-12
+Develop Authentication Module,Implement login/signup functionality with JWT,Backend Developer,2024-08-18
+Implement UI Prototype,Build clickable frontend UI prototype,Frontend Developer,2024-08-20
+QA & Bug Fixes,Run tests and fix reported issues,QA Engineer,2024-08-25
+Deployment,Deploy MVP version to staging,DevOps Engineer,2024-08-30
+Post-launch Feedback,Collect feedback from internal users,Product Manager,2024-09-02

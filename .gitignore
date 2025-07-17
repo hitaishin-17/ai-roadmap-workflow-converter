@@ -1,0 +1,43 @@
+# === Java / Spring Boot ===
+/target/
+*.class
+*.jar
+*.war
+*.iml
+*.log
+hs_err_pid*
+*.hprof
+*.DS_Store
+
+# IntelliJ
+.idea/
+*.ipr
+*.iws
+*.bak
+*.swp
+
+# Maven
+.mvn/
+!**/src/main/**
+
+# === Node.js / Frontend ===
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# === OS / Editor Specific ===
+*.log
+*.tmp
+*.orig
+*.bak
+*.swp
+*.swo
+*~
+*.vscode/
+.vscode/
+.DS_Store
+Thumbs.db
