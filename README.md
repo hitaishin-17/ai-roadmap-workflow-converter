@@ -18,13 +18,21 @@ So I built a tool to solve that:
 
 >  From high-level roadmap → to BPMN diagram → to executable workflows — in seconds.
 
-This project showcases how I:
-- Identify real-world friction between teams
-- Translate ambiguous inputs into structured, actionable formats
-- Use AI practically (not just as a buzzword)
-- Work cross-functionally across design, dev, and ops layers
+## My Role (as PM)
+- Defined scope and MVP specs
+- Built end-to-end AI-powered roadmap converter
+- Coordinated backend (Java) + frontend (React) + BPMN viewer
+- Created prompting for Mistral to generate BPMN XML
+- Validated with product, ops, and engineering peers
 
 ---
+## Epic
+Enable product and ops teams to convert roadmap ideas into structured BPMN workflows without manual effort.
+
+## Example User Story
+As a Product Ops Manager,  
+I want to convert roadmap items into executable workflows,  
+So I can standardize handoff to engineering without ambiguity.
 
 ## 🔍 What It Does
 
@@ -55,6 +63,12 @@ Upload a roadmap CSV — for example:
 📽️ [Watch the Demo Video](https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing)
 ---
 
+## Impact (So Far)
+- Cut manual BPMN creation from 2 hrs → 30 secs
+- Successfully converted 10+ sample roadmaps
+- Validated across sample roadmaps with consistent output
+- Integrated BPMN-js for seamless visualization
+---
 
 ## Product Thinking Behind the Build
 
