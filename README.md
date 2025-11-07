@@ -57,9 +57,9 @@ The backend sends each step to Mistral → receives structured XML → visualize
 
 ## Getting Started
 Prerequisites
-	•	Java 17+
-	•	Node.js 18+
-	•	Ollama with Mistral model installed
+- Java 17+
+- Node.js 18+
+- Ollama with Mistral model installed
 Run locally
 # Start Ollama + Mistral
 ```bash
@@ -77,18 +77,18 @@ npm start
 ---
 
 **Performance & Results**
-	•	Reduced BPMN creation time from 2 hrs → 30 secs
-	•	Successfully converted 10+ sample roadmaps
-	•	Generated consistent BPMN-compliant XML output validated via Camunda Modeler
+	- Reduced BPMN creation time from 2 hrs → 30 secs
+	- Successfully converted 10+ sample roadmaps
+	- Generated consistent BPMN-compliant XML output validated via Camunda Modeler
 
 **Future Enhancements**
 
-	•	Gateway and decision node recognition
-	•	Streaming LLM output for real-time rendering
-	•	Export as SVG/PNG for reports
-	•	Multi-language roadmap parsing
-	•	Slack/Notion roadmap ingestion APIs
-	•	Audit logging for enterprise deployments
+	- Gateway and decision node recognition
+	- Streaming LLM output for real-time rendering
+	- Export as SVG/PNG for reports
+	- Multi-language roadmap parsing
+	- Slack/Notion roadmap ingestion APIs
+	- Audit logging for enterprise deployments
 
 **About This Build**
 
@@ -97,4 +97,5 @@ This project demonstrates how LLMs can generate structured BPMN process flows pr
 The emphasis is on modularity, reproducibility, and interoperability across workflow engines.
 
 📩 [Let’s connect on LinkedIn](https://www.linkedin.com/in/hitaishi-n-grovista)
+
 
