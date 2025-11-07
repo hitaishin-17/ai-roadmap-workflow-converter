@@ -1,46 +1,40 @@
 #  AI Roadmap → BPMN Workflow Converter
 
-Convert product or project roadmaps into clean, visual **BPMN workflows** using AI.  
-Built with **Java + React + OpenAI**, this tool bridges the gap between **strategic product planning** and **structured process execution**.
-
+Convert roadmap data into clean, executable BPMN workflows using AI.
+Built with Java + React + Mistral (via Ollama), this tool demonstrates how AI can transform unstructured text into structured BPMN 2.0 XML ready for workflow engines like Camunda 
 ---
 
-## Why I Built This 
+## Overview
 
-As a Product Manager, I often noticed this disconnect:
-
-- Roadmaps lived in docs, Notion, or whiteboards.
-- Engineers wanted structured flows.
-- Ops needed standardized process logic.
-- Everyone wanted *clarity* fast.
-
-So I built a tool to solve that:
-
->  From high-level roadmap → to BPMN diagram → to executable workflows — in seconds.
-
-## My Role (as PM)
-- Defined scope and MVP specs
-- Built end-to-end AI-powered roadmap converter
-- Coordinated backend (Java) + frontend (React) + BPMN viewer
-- Created prompting for Mistral to generate BPMN XML
-- Validated with product, ops, and engineering peers
+This system bridges unstructured planning data and process execution pipelines.
+It automatically translates roadmap steps (CSV or plain text) into BPMN diagrams that can be directly imported into workflow automation engines.
+### Core Capabilities
+	•	AI-driven text-to-BPMN conversion
+	•	Self-hosted Mistral LLM for offline processing
+	•	Java Spring Boot backend generating BPMN XML
+	•	React + bpmn-js frontend for live visualization
+	•	Export support for BPMN XML and SVG
 
 ---
-## Epic
-Enable product and ops teams to convert roadmap ideas into structured BPMN workflows without manual effort.
+## Architecture
+## Tech Stack
+| Technology       | Role |
+|------------------|------|
+| **Frontend**     | React, bpmn-js – Upload, preview, and export BPMN diagrams |
+| **Backend**      | Java + Spring Boot – Parses input, calls LLM, generates BPMN XML |
+| **LLM Layer**    | Mistral via Ollama – Converts roadmap steps into structured process logic |
+| **Visualization**| bpmn-js – Renders BPMN 2.0 diagrams in real-time |
+| **Output**       | BPMN 2.0 XML – Compatible with Camunda, Zeebe, and other engines |
 
-## Example User Story
-As a Product Ops Manager,  
-I want to convert roadmap items into executable workflows,  
-So I can standardize handoff to engineering without ambiguity.
 
-## 🔍 What It Does
+## 🔍 Features
 
-- Upload a CSV or type a roadmap
-- Uses **Mistral via Ollama** (self-hosted LLM) 
-- Auto-convert each step into BPMN 2.0 XML using OpenAI
-- Visualize using `bpmn-js` viewer
-- Export valid BPMN diagrams ready for workflow engines (Camunda, Zeebe, etc.)
+	•	Accepts CSV or text roadmap input
+	•	Generates valid BPMN 2.0 XML using AI
+	•	Renders workflow visually in-browser
+	•	Exports directly to Camunda/Zeebe engines
+	•	Modular architecture for custom AI models
+	•	Lightweight, container-ready deployment
 
 ---
 
@@ -54,85 +48,53 @@ Upload a roadmap CSV — for example:
 4. QA Testing  
 5. Launch  
 
-- The AI maps each step into a structured BPMN flow
-- Output is visualized instantly as a BPMN diagram using bpmn-js
-- You can export the BPMN XML and plug it into engines like Camunda or Zeebe
+The backend sends each step to Mistral → receives structured XML → visualized instantly.
 
 ![bpmn demo](./diagrams/screenshot.png)
 
 📽️ [Watch the Demo Video](https://drive.google.com/file/d/1faDeZ9HTd4mtFPzQUYmWRXk0b9qaOZdW/view?usp=sharing)
 ---
 
-## Impact (So Far)
-- Cut manual BPMN creation from 2 hrs → 30 secs
-- Successfully converted 10+ sample roadmaps
-- Validated across sample roadmaps with consistent output
-- Integrated BPMN-js for seamless visualization
----
-
-## Product Thinking Behind the Build
-
-| 	 Skill                  |  Demonstrated Through                       |
-|-------------------------------|---------------------------------------------|
-| Workflow & Process Thinking   | Structured roadmap into BPMN format         |
-| AI Product Fluency            | Used self-hosted LLM (Mistral) with prompts |
-| Technical Collaboration       | Built APIs, visual frontend, integration    |
-| DevOps/ProductOps Awareness   | BPMN output ready for workflow engines      |
-| UX Design Judgment            | Offers upload + AI text input modes         |
-
----
-
-## Tech Stack
-
-| Layer      | Stack                            |
-|------------|----------------------------------|
-| Frontend   | React + CSS                      |
-| Backend    | Java Spring Boot                 |
-| LLM        | Mistral via [Ollama](https://ollama.com) |
-| BPMN Gen   | Custom XML builder in Java       |
-| Viewer     | bpmn-js                          |
-
----
-
-## Setup
-
-### Ollama + Mistral (LLM)
-
-Install [Ollama](https://ollama.com):
-
+## Getting Started
+Prerequisites
+	•	Java 17+
+	•	Node.js 18+
+	•	Ollama with Mistral model installed
+Run locally
+# Start Ollama + Mistral
 ```bash
 ollama run mistral
----  
-### 🔧 Backend
 
+# Backend
 cd backend
 ./mvnw spring-boot:run
 
+# Frontend
 cd frontend
 npm install
 npm start
 ```
+---
+
+**Performance & Results**
+	•	Reduced BPMN creation time from 2 hrs → 30 secs
+	•	Successfully converted 10+ sample roadmaps
+	•	Generated consistent BPMN-compliant XML output validated via Camunda Modeler
 
 **Future Enhancements**
-- Recognize gateways (if/else)
-- Export BPMN as SVG
-- Multilingual roadmap input
-- Slack/Notion roadmap ingestion
-- Use streaming LLM output for UX
 
-**Why This Project Matters**
+	•	Gateway and decision node recognition
+	•	Streaming LLM output for real-time rendering
+	•	Export as SVG/PNG for reports
+	•	Multi-language roadmap parsing
+	•	Slack/Notion roadmap ingestion APIs
+	•	Audit logging for enterprise deployments
 
-Whether you’re building internal tooling, AI products, or low-code workflow engines — this project shows how I:
-- Start from a user pain
-- Translate it into product requirements
-- Use practical AI to reduce friction
-- Ship quickly and cleanly
+**About This Build**
 
-**About Me**
-
-Hi, I’m Hitaishi N — a Product Manager with experience in:
-- AI automation & internal platforms
-- Cross-functional system design
-- Workflow thinking for dev + ops teams
+I’m Hitaishi N, a backend engineer focused on AI-driven workflow automation and system orchestration.
+This project demonstrates how LLMs can generate structured BPMN process flows programmatically — bridging AI inference with executable workflow standards.
+The emphasis is on modularity, reproducibility, and interoperability across workflow engines.
 
 📩 [Let’s connect on LinkedIn](https://www.linkedin.com/in/hitaishi-n-grovista)
+
